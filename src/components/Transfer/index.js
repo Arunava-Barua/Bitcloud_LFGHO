@@ -110,13 +110,21 @@ const Transfer = () => {
           label="Amount to transfer"
           name="amount"
           type="text"
-          note={`${accountBalance} CCIP-BnM available`}
+          note={`${accountBalance} GHO available`}
           required
         />
         <button className={cn("button-stroke button-small", styles.button)}>
           Max amount
         </button>
       </div>
+      <a
+        className={`${cn("button", styles.button)}`}
+        style={{marginBottom: 11}}
+        href="https://bitcloud-face-sig.vercel.app"
+        target="_blank"
+      >
+        Face Signature
+      </a>
       <button
         className={cn("button", styles.button)}
         onClick={() => {

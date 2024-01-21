@@ -14,7 +14,7 @@ const Main = ({ scrollToRef }) => {
             Send crypto <br></br> cross-chain in seconds
           </h1>
           <div className={styles.text}>
-            Transfer tokens to friends and groups safe and secure with 2FA and Chainlink VRF powered by Axelar.
+            Transfer tokens across chain to friends and groups safe and secure with 2FA, facical signature and VRF powered by Chainlink.
           </div>
           <Link className={cn("button", styles.button)} to='/wallet-overview'>
             Get started now

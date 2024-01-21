@@ -140,7 +140,7 @@ export const CloudProvider = ({ children }) => {
         userAddress = accounts[0];
       }
 
-      const txRes = await contract.balanceOf("0x03aBb516722Db6ffc36a33b74B656C876D542D92");
+      const txRes = await contract.balanceOf(userAddress);
       console.log("🟢🟢🟢", txRes)
       console.log("🟢🟢🟢", txRes._hex)
       let formattedtxRes = ethers.utils.formatEther(Number(txRes._hex).toString());
